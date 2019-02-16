@@ -1,7 +1,8 @@
+require('module-alias/register')
 import * as Koa from 'koa'
 import * as Router from 'koa-route';
 
-import {findById, getAllPersons} from './services/person'
+import {findById, getAllPersons} from '@/services/person'
 
 const port: number = 3000
 
