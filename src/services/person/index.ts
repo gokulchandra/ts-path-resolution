@@ -1,4 +1,4 @@
-import { Person, getById, list } from '../../repositories/person'
+import { Person, getById, list } from '@/repositories/person'
 
 export const findById = (id: number): Person => {
     //Some business logic
