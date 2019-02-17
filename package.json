@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rm -rf dist/* && tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --bail --coverage --verbose --silent",
     "start": "ts-node ./src/index.ts"
   },
   "author": "",
