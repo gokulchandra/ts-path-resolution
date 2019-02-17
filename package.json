@@ -25,6 +25,7 @@
     "typescript": "^3.3.3"
   },
   "_moduleAliases": {
-    "@": "dist"
+    "@": "dist",
+    "database": "dist/lib/database"
   }
 }

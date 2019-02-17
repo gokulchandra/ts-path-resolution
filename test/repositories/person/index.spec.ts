@@ -1,5 +1,5 @@
 import { getById, list } from '@/repositories/person'
-import { db } from '@/lib/database'
+import { persons } from 'database'
 
 describe('getById', () => {
     it('should return person for given id', () => {
@@ -11,8 +11,8 @@ describe('getById', () => {
 
 describe('list', () => {
     it('should return all persons', () => {
-        const persons = list()
-        const expected = Object.keys(db).length
-        expect(persons.length).toBe(expected)
+        const actual = list()
+        const expected = Object.keys(persons).length
+        expect(actual.length).toBe(expected)
     })
 })

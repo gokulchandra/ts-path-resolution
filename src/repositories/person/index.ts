@@ -1,11 +1,11 @@
-import { db } from '@/lib/database'
+import { persons } from 'database'
 
 export const getById = (id: number): Person => {
-    return db[id]
+    return persons[id]
 }
 
 export const list = (): Person[] => {
-    return Object.keys(db).map((k: string) => db[k])
+    return Object.keys(persons).map((k: string) => persons[k])
 }
 
 export interface Person {
